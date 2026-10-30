@@ -1,0 +1,29 @@
+:root{--bg:#101418;--panel:#1a2027;--text:#e8ecef;--muted:#9aa5ae;--accent:#d9a441;--live:#4caf7a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:1px solid #2a323b}
+header .brand{font-weight:700;font-size:20px;text-decoration:none;color:var(--accent)}
+header nav a{margin-left:18px;color:var(--muted);text-decoration:none}
+header nav a:hover{color:var(--text)}
+main{max-width:1200px;margin:0 auto;padding:24px}
+h1{margin:8px 0 4px}
+.lede{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:var(--panel);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card img,.ep img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#000}
+.card .meta{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.card h2{font-size:18px;margin:0}
+.card h2 a,.ep a{text-decoration:none}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.card .links{margin-top:auto;padding-top:8px;display:flex;gap:14px;font-size:14px}
+.card .links a{color:var(--accent);text-decoration:none}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:1px 8px;border-radius:999px;background:#2a323b;color:var(--muted)}
+.badge.active{background:var(--live);color:#06130b}
+.button{display:inline-block;margin:0 0 24px;padding:8px 16px;border-radius:6px;background:var(--accent);color:#1a1300;font-weight:600;text-decoration:none}
+.eps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.ep{background:var(--panel);border-radius:8px;overflow:hidden}
+.ep .meta{padding:8px 10px 10px;font-size:14px}
+.ep .num{color:var(--accent);font-weight:600}
+.ep .sub{color:var(--muted);font-size:13px}
+footer{color:var(--muted);text-align:center;padding:32px 24px;font-size:14px}
